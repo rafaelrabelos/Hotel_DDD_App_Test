@@ -1,9 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestProject", "CSharpTestProject\CSharpTestProject.csproj", "{19D96416-F083-4167-B40F-ED09ED3BCFC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTestProject", "CSharpTestProject\Tests\CSharpTestProject.csproj", "{19D96416-F083-4167-B40F-ED09ED3BCFC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{1EC1DEEA-7403-456B-B997-77701B0019D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{823C6EFD-A9E2-41F7-BCBE-27DEA2CCF12B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{6FD12061-3796-4750-AC9D-8F3FD24BACC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.domain", "CSharpTestProject\3-Domain\hotel.domain\hotel.domain.csproj", "{19741AA5-381A-4FDD-94CA-E19975026ED0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5AEAE323-332C-4411-80B1-536713C8D31F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{795FEB40-A4E8-470D-BED2-11C8045756DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOC", "IOC", "{BAB47906-AA58-4502-A30E-468E2834EFBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.infra.IOC", "CSharpTestProject\4-Infra\hotel.infra.ioc\hotel.infra.IOC.csproj", "{A0AF4CDD-57D7-45ED-ACDF-A253078CED45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.presentation.api", "CSharpTestProject\1-Presentation\hotel.presentation.api\hotel.presentation.api.csproj", "{7A2D08C4-2B97-45C0-B191-B420FC8D6D75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B602781F-8B2C-4212-A75E-192C9F4959CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.application.services", "CSharpTestProject\2-Application\Services\hotel.application.services\hotel.application.services.csproj", "{4001AB02-A28B-4AD0-905A-8A6E9C374743}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.infra.data", "CSharpTestProject\4-Infra\hotel.infra.data\hotel.infra.data\hotel.infra.data.csproj", "{5DFE7AE3-5922-42D1-8078-9041FE04817F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.presentation.console", "CSharpTestProject\1-Presentation\hotel.presentation.console\hotel.presentation.console\hotel.presentation.console.csproj", "{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +41,44 @@ Global
 		{19D96416-F083-4167-B40F-ED09ED3BCFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19D96416-F083-4167-B40F-ED09ED3BCFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19D96416-F083-4167-B40F-ED09ED3BCFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19741AA5-381A-4FDD-94CA-E19975026ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19741AA5-381A-4FDD-94CA-E19975026ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19741AA5-381A-4FDD-94CA-E19975026ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19741AA5-381A-4FDD-94CA-E19975026ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AF4CDD-57D7-45ED-ACDF-A253078CED45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AF4CDD-57D7-45ED-ACDF-A253078CED45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AF4CDD-57D7-45ED-ACDF-A253078CED45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AF4CDD-57D7-45ED-ACDF-A253078CED45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2D08C4-2B97-45C0-B191-B420FC8D6D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2D08C4-2B97-45C0-B191-B420FC8D6D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2D08C4-2B97-45C0-B191-B420FC8D6D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2D08C4-2B97-45C0-B191-B420FC8D6D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4001AB02-A28B-4AD0-905A-8A6E9C374743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4001AB02-A28B-4AD0-905A-8A6E9C374743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4001AB02-A28B-4AD0-905A-8A6E9C374743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4001AB02-A28B-4AD0-905A-8A6E9C374743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFE7AE3-5922-42D1-8078-9041FE04817F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFE7AE3-5922-42D1-8078-9041FE04817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFE7AE3-5922-42D1-8078-9041FE04817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFE7AE3-5922-42D1-8078-9041FE04817F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19D96416-F083-4167-B40F-ED09ED3BCFC2} = {B602781F-8B2C-4212-A75E-192C9F4959CD}
+		{19741AA5-381A-4FDD-94CA-E19975026ED0} = {823C6EFD-A9E2-41F7-BCBE-27DEA2CCF12B}
+		{5AEAE323-332C-4411-80B1-536713C8D31F} = {6FD12061-3796-4750-AC9D-8F3FD24BACC4}
+		{BAB47906-AA58-4502-A30E-468E2834EFBA} = {6FD12061-3796-4750-AC9D-8F3FD24BACC4}
+		{A0AF4CDD-57D7-45ED-ACDF-A253078CED45} = {BAB47906-AA58-4502-A30E-468E2834EFBA}
+		{7A2D08C4-2B97-45C0-B191-B420FC8D6D75} = {795FEB40-A4E8-470D-BED2-11C8045756DE}
+		{4001AB02-A28B-4AD0-905A-8A6E9C374743} = {1EC1DEEA-7403-456B-B997-77701B0019D2}
+		{5DFE7AE3-5922-42D1-8078-9041FE04817F} = {5AEAE323-332C-4411-80B1-536713C8D31F}
+		{1EF6E15A-D72F-4783-97EA-F7E0C0A29E00} = {795FEB40-A4E8-470D-BED2-11C8045756DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFEB4D01-FEC6-415B-B321-EF319EE0F913}

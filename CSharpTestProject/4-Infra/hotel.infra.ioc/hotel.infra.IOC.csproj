@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>hotel.infra.ioc</AssemblyName>
+    <RootNamespace>hotel.infra.ioc</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2-Application\Services\hotel.application.services\hotel.application.services.csproj" />
+    <ProjectReference Include="..\..\3-Domain\hotel.domain\hotel.domain.csproj" />
+    <ProjectReference Include="..\hotel.infra.data\hotel.infra.data\hotel.infra.data.csproj" />
+  </ItemGroup>
+
+</Project>
